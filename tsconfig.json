@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "declaration": true,
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "outDir": "dist"
+    },  
+    "exclude": [
+        "node_modules"
+    ],  
+    "files": [
+        "src/validate-course.ts",
+        "src/bin/validate-course.ts"
+    ]   
+}

@@ -1,10 +1,11 @@
 {
-  "name": "ca-school-course-validator",
+  "name": "course-validator",
   "version": "0.0.1",
-  "description": "Validation Service for CA School Courses",
-  "main": "index.js",
+  "description": "Validator for CA School Courses",
+  "main": "dist/validate-course.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,14 @@
   },
   "homepage": "https://github.com/CodingAvenue/ca-school-course-validator#readme",
   "dependencies": {
+    "ca-question": "github:codingavenue/ca-question",
+    "fs-extra": "^2.0.0",
+    "markdown-it": "^8.2.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "0.0.37",
+    "@types/markdown-it": "0.0.2",
     "@types/node": "^7.0.5",
-    "express": "^4.14.1",
     "typescript": "^2.1.6"
   }
 }
